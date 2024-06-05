@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function About(props) {
   console.log(props.mode);
   return (
-    <div
-      className={`container ${props.mode}`}
-      onClick={props.togglemode}
-      style={{
-        backgroundColor: props.mode === "light" ? "white" : "#042743",
-        color: props.mode === "light" ? "black" : "white",
-      }}
-    >
+    <div className={`container ${props.mode}`} onClick={props.togglemode}>
       <h2>About us</h2>
       <div
         className={`accordion ${props.mode}`}
